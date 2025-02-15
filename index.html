@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calligraphy Website in html and Css</title>    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  href="Caligraphy-web.css" rel="stylesheet">   
+<link  href="Caligraphy-web2.css" rel="stylesheet">
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   
+</style>
+</head>
+<body>
+    <div class="fixed-bar">
+    
+    <div class="creator-name"><h2><span class="creator-text">Somesh</span></h2></div>
+    <!-- Menu Bar code -->
+    <div class="menu-container">
+        
+    <input type="checkbox" id="check" class="check">
+    <label for="check" class="toggle">
+        
+        <div class="line_contain">
+        
+        <div id="l1"></div>
+        <div id="l2"></div>
+        
+        </div>
+    </label>    
+<!-- Navigation Bar -->    
+    <div class="nav">    
+    <ul>
+        
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>    
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Help</a></li>    
+    </ul>
+    </div>    
+        
+    
+    </div> 
+    <!-- Star menu code -->   
+    <div class="star-container">
+    
+    <div class="sl-contain">    
+    <div class="sl" id="sl1"></div>
+    <div class="sl" id="sl2"></div>
+    <div class="sl" id="sl3"></div>
+    <div class="sl" id="sl4"></div>
+    <div class="sl" id="sl5"></div>    
+    </div>    
+        
+    </div>
+        
+    </div>
+    
+    
+    <!-- Content Page All things -->
+    <div class="content-page">
+    
+    <div class="first-text">
+    <h2>
+    <span id="ft1">Welcome to the</span>
+    </h2>
+    </div>
+        
+    <div class="twelveth-img-1"><img id="twelveth-img1-1" src="smile01.svg"></div>    
+        
+    <div class="second-text">
+    <h2>
+    <span id="st1">Playground</span>
+    </h2>
+    </div>
+    
+    <div class="third-text">
+    <h2>
+    <span id="tt1">of</span>
+    </h2>
+    </div>
+        
+    <div class="fourth-text">
+    <h2>
+    <span id="ft2">Somesh</span>
+    </h2>
+    </div>    
+    </div>
+    
+    <!-- Bg change and Content -->
+    
+    <div class="content-page2">
+        
+    <div class="cp2-arrow1"><img id="cp2-arrow-img" src="arrow1.png"></div>    
+        
+    <div class="cp2-item">
+    <svg id="svg-art" style="position:absolute; height: 400px; top: 0; left: 0; width:900px;">
+    <text id="svg-text" x="10%" y="390" font-family="Voyage" letter-spacing="20px" font-size="520" opacity="0.5" fill="red">Art</text>    
+    </svg>    
+    <h2>
+    <span id="cp2-text">Director & Illustrator</span>    
+    </h2>        
+    </div>
+    
+</div>
+<br> <br><br>    <br>
+<!-- Second Page of Oval text rotating -->
+    
+ <div class="second-container">
+  
+  <div class="second-title">     
+  <span id="title-style">Let's Make the Second Move Here</span>  
+  </div>    
+    
+   <div class="circle-container">
+    
+    <svg  viewBox="0 0 300 300" class="circle-svg" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define image -->
+    <defs>
+    
+    <pattern id="imgpattern" width="1" height="1" patternUnits="objectBoundingBox">
+    <g transform="translate(0.5,0.5) rotate(270) translate(-0.5,-0.5)" >
+    <image href="images.jpeg" x="-95" y="-5" height="170" width="130"></image>        
+    </g>
+    </pattern>
+        
+    </defs>    
+    <!--Circle With Visible Stroke -->
+    <path  d="M 150, 115 a 80,45 0 1,1 -1,0" stroke="#fff" stroke-width="2" fill="url(#imgpattern)"/>
+    <!--Invisible Larger oval for gap between text -->
+    <path id="circlePath"  d="M 150, 100 a 100,60 0 1,1 -1,0" stroke="none" fill="none"/>
+        
+    <text>
+    <textpath href="#circlePath" startOffset="0%" class="circle-text" text-anchor="middle" fill="#000">
+    <animate attributeName="startOffset" type="rotate" values="0%;100%" dur="25s"
+    repeatCount="indefinite"/>ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION
+    ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION    
+    </textpath>
+    </text>
+    <!-- Another text above it -->    
+        
+    <path id="outside-Path"  d="M 150, 70 a 120,90 0 1,1 -1,0" stroke="none" fill="none"/>
+    <text>
+    <textpath href="#outside-Path" class="outside-text"  startOffset="0%"  text-anchor="middle" fill="#aaa">
+    <animate attributeName="startOffset" type="rotate" values="100%;0%" dur="25s"
+    repeatCount="indefinite"/>ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION
+    ESPECIALLY ENJOYING DESIGN & ILLUSTRATION ESPECIALLY ENJOYING DESIGN & ILLUSTRATION    
+    </textpath>
+    </text>    
+        
+    </svg>    
+    </div> 
+    
+</div>
+    <br><br>
+    <!-- Third Page Continue -->
+<div class="click-scroll">
+    <br>
+    <input type="checkbox" class="check3" id="check3">
+    <label for="check3" class="toggle-button3">
+    Click For More
+    </label>
+
+    <div class="line-container3">
+    <div class="line3" id="l1-3"></div>
+    <div class="line3" id="l2-3"></div>
+    </div>
+    
+    <div class="third-container">
+
+<div class="tc-items-container">    
+<span id="tc-text1">More about Somesh</span>
+<span id="tc-text2">ON MY FREE TIME YOU CAN FIND ME </span>    
+<span id="tc-text3">TRYING TO RESCUE MY PLANTS,</span>
+<span id="tc-text4">SOAKING UP SUNLIGHT ON THE </span>
+<span id="tc-text5">BALCONY AND READING </span>
+<span id="tc-text6">EXCITING THRILLERS</span>
+<br> <br>    
+    <div class="line-container2">
+    <div class="line2" id="l1-2"></div>
+    <div class="line2" id="l2-2"></div>
+    </div>
+
+    <input type="checkbox" class="check2" id="check2">
+    <label for="check3" class="toggle-button2">
+    Close
+    </label>
+    
+</div>    
+</div> 
+
+    
+</div>
+<br><br><br> <br>
+    <!-- fourth Page Continue -->
+<div class="fourth-container">
+
+    <span id="fc-invisible"></span>
+    
+  <span id="fc-t1">I Always Strive to Develop</span> 
+  <span id="fc-t2">Unique Designs Solutions</span>
+  <span id="fc-t3">and improve the</span>
+  <span id="fc-t4">quality of life</span>       
+    <br>
+ 
+  <span id="fc-ht1">Some of</span>
+  <span id="fc-ht2">my Selected</span>
+  <span id="fc-ht3">Works</span>    
+    
+</div>
+    
+    <!-- fifth Page Continue -->
+<div class="fifth-container">
+    
+<div class="fc-bg">
+    
+    <div class="img2-container">
+    
+    <div id="img2-2"><img id="img2-pic2" src="2img-2.webp"/></div>
+    <div id="img2-1"><img id="img2-pic1" src="2img-1.png"/></div>    
+    
+    </div>
+    
+    <span id="fc-bg-t1">1/5</span>
+    <span id="fc-bg-t2">Illustrations</span>
+    <span id="fc-bg-t3">Commercial and personal </span>
+    <span id="fc-bg-t4">stories true the art.</span>
+    
+</div>    
+    
+</div>
+    
+    
+    <!-- Sixth Page Continue -->
+<div class="sixth-container">
+    
+<div class="sc-bg">
+    
+    <div class="sc-img2-container">
+    
+    <div id="sc-img2-2"><img id="sc-img2-pic2" src="sec2-1.jpg"/></div>
+    <div id="sc-img2-1"><img id="sc-img2-pic1" src="sec2-2.jpg"/></div>    
+    
+    </div>
+    
+    <span id="sc-bg-t1">2/5</span>
+    <span id="sc-bg-t2">Bangs</span>
+    <span id="sc-bg-t3">Who needs a haircut? Bangs is a (hypothetical)</span>
+    <span id="sc-bg-t4">hairdresser salon which stands out with its bright</span>
+    <span id="sc-bg-t5">colors and fun characters.</span>
+
+</div>    
+    
+</div>
+    
+    <!-- Seventh Page Continue -->
+<div class="seventh-container">
+    
+<div class="seventh-bg">
+    
+    <div class="seventh-img2-container">
+    
+    <div id="seventh-img2-2"><img id="seventh-img2-pic2" src="sec3-1.png"/></div>
+    <div id="seventh-img2-1"><img id="seventh-img2-pic1" src="sec3-2.jpg"/></div>    
+    
+    </div>
+    
+    <span id="seventh-bg-t1">3/5</span>
+    <span id="seventh-bg-t2">Liberty in</span>
+    <span id="seventh-bg-t22">North Korea</span>
+    <span id="seventh-bg-t3">The disproportional attention of todays media is paid</span>
+    <span id="seventh-bg-t4">to the neverending debating between US-president</span>
+    <span id="seventh-bg-t5">Trump and dictator Kim Jong-Un.</span>
+
+
+
+</div>    
+    
+</div>
+    
+    <!-- eight Page Continue -->
+<div class="eight-container">
+    
+<div class="eight-bg">
+    
+    <div class="eight-img2-container">
+    
+    <div id="eight-img2-2"><img id="eight-img2-pic2" src="sec4-1.jpeg"/></div>
+    <div id="eight-img2-1"><img id="eight-img2-pic1" src="sec4-2.jpg"/></div>    
+    
+    </div>
+    
+    <span id="eight-bg-t1">4/5</span>
+    <span id="eight-bg-t2">Cube</span>
+    <span id="eight-bg-t3">Going to the supermarket, walking to work, dancing</span>
+    <span id="eight-bg-t4">in the club, riding your bike: We are constantly</span>
+    <span id="eight-bg-t5">moving. Moving and producing energy. What if we</span>
+    <span id="eight-bg-t6">could use this energy?</span>
+
+
+
+</div>    
+    
+</div>
+    
+    
+<!-- nineth Page Continue -->
+<div class="nineth-container">
+    
+<div class="nineth-bg">
+    
+    <div class="nineth-img2-container">
+    
+    <div id="nineth-img2-2"><img id="nineth-img2-pic2" src="images.jpeg"/></div>
+    <div id="nineth-img2-1"><img id="nineth-img2-pic1" src="sec5-1.jpg"/></div>    
+    
+    </div>
+    
+    <span id="nineth-bg-t1">5/5</span>
+    <span id="nineth-bg-t2">Somesh</span>
+    <span id="nineth-bg-t3">Branding for yourself is by far the most</span>
+    <span id="nineth-bg-t4">difficult thing to do. You tend to critique and</span>
+    <span id="nineth-bg-t5">procrastinate endlessly.</span>
+
+</div>  
+<div class="nineth-bg2">
+    
+    
+</div>
+    
+</div>    
+    
+    <!-- Tenth Page continue-->
+    
+<div class="tenth-container">
+<div class="tenth-con">    
+<span id="tenth-title">Let's Make our own Story</span>
+</div>       
+
+</div>
+  
+    <!-- Eleventh Page continue-->
+    
+<div class="eleventh-container">
+
+    <span id="eleventh-t1">Say a Simple</span>
+    <span id="eleventh-t2">Hello!</span>
+    
+<div class="eleventh-img"><img id="eleventh-img1" src="last.png"></div> 
+    
+    <span id="eleventh-t3">Let's Collaborate &</span>
+    <span id="eleventh-t4">tell your story</span>
+<div class="eleventh-t5">
+    <span id="eleventh-t55">Contact Me</span>
+</div>    
+</div>
+    
+    
+    <!-- twelveth page continue -->
+    
+<div class="twelveth-container">
+    
+    <div class="twelveth-img"><img id="twelveth-img1" src="smile%2002-red.svg"></div>
+    
+    <span id="twelveth-t1">Somesh & you</span>
+    
+    <span id="twelveth-t2">BEHANCE&emsp;&emsp;INSTAGRAM</span>
+    
+</div>   
+    
+    
+    <!-- thirteen page continue -->
+    
+<div class="thirteen-container">
+    
+    <ul class="thirteen-ul">
+    <li class="thirteen-li" id="thirteen-li1">About</li>
+    <li class="thirteen-li" id="thirteen-li2">Works</li>
+    <li class="thirteen-li" id="thirteen-li3">Illustration</li>
+    <li class="thirteen-li" id="thirteen-li4">Contact</li>    
+    </ul>
+   
+ <div class="thirteen-con-t1">
+  <span id="thirteen-t1">&#169;COPYRIGHT 2025 SOMESH</span>
+</div>
+</div>
+    
+</body>
+</html>
