@@ -7,7 +7,13 @@
         width: 100vw;
         display:flex;
         flex-direction: column;
+        font-family:Voyage;
+        overflow-x:hidden;
     
+    }
+    @font-face{
+        font-family: Voyage;
+        src:url("voyage.otf");
     }
 
     .fixed-container{
